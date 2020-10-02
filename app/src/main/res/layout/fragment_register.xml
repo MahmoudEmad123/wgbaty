@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.loginFragment.RegisterFragment">
+
+
+    <EditText
+        android:id="@+id/eTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shap_btn_login"
+        android:hint="رقم الجوال"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/texthintcolor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imagPhone"-->
+    <!--        android:layout_width="28dp"-->
+    <!--        android:layout_height="28dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:contentDescription="@string/app_name"-->
+    <!--        android:src="@drawable/icon_phone"-->
+    <!--        android:tint="@color/white"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/eTextUserName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/eTextUserName" />-->
+
+    <EditText
+        android:id="@+id/eTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shap_btn_login"
+        android:hint="كلمة المرور"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/texthintcolor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTextUserName" />
+
+
+    <EditText
+        android:id="@+id/eTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shap_btn_login"
+        android:hint="الاسم كامل"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/texthintcolor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTextPassword" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTextFullName" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_liner_lang"
+        android:hint="تسجيل حساب جديد"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin" />
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textForGetPass"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="ليس لديك حساب ؟"-->
+    <!--                android:textColor="#131621"-->
+    <!--                android:textSize="16sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textvisitor"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="دخول كزائر"-->
+    <!--                android:textColor="@color/brouwn"-->
+    <!--                android:textSize="16sp" />-->
+
+
+    <!--        </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

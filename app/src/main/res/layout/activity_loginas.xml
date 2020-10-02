@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_orange"
+    tools:context=".Activitis.Loginas">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/statrt_loginas"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="99dp"
+            android:src="@drawable/icon"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-44dp"
+        android:text="@string/siginas"
+        android:textColor="@color/brouwn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_marginStart="92dp"-->
+<!--        android:layout_marginTop="88dp"-->
+<!--        android:background="@drawable/circle_image"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/ic_outline">-->
+
+<!--        </ImageView>-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/image2"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="56dp"-->
+
+<!--        android:layout_marginTop="88dp"-->
+<!--        android:background="@drawable/circle_image"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/image"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/ic_seeker">-->
+
+<!--        </ImageView>-->
+<!--    </RelativeLayout>-->
+
+
+    <ImageButton
+        android:id="@+id/img_Orderfood"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/circle_image"
+        android:src="@drawable/ic_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/restaurant_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/restaurantOwner"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/Order_food"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
+
+    <ImageButton
+        android:id="@+id/circleImageView2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/circle_image"
+        android:src="@drawable/ic_seeker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/Order_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/Orderfood"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Orderfood" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

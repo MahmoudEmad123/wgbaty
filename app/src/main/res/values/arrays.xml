@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="num">
+        <item>غزة</item>
+        <item>خانيونس</item>
+        <item>رفح</item>
+        <item>البريج</item>
+        <item>النصيرات</item>
+
+    </string-array>
+</resources>

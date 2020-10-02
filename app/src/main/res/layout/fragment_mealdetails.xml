@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Mealsdetails.MealdetailsFragment">
+
+
+    <TextView
+        android:id="@+id/text_nameMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" سبانيولي ديليشاس "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#515050"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text=" 30 NIS "
+        android:textColor="@color/color_orange"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_nameMeal"
+        app:layout_constraintEnd_toStartOf="@+id/text_nameMeal" />
+
+    <TextView
+        android:id="@+id/textDetailsMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:padding="10dp"
+        android:text="استمتع بتفاصيل الخُضار المطبوخ مع قطع الدجاج
+  بالنكهة الاسبانية"
+        android:textColor="#515050"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nameMeal" />
+
+
+    <Button
+        android:id="@+id/button_addCart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:text="أضف الي السلة"
+        android:background="@drawable/shape_liner_lang"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

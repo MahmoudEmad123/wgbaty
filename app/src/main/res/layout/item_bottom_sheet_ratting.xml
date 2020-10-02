@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_ratting"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="تقييم الوجبة"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/color_orange"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/eTextNot"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/shap_btn_login"
+        android:hint="ملاحظات"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/texthintcolor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+
+    <Button
+        android:id="@+id/btnrating"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shape_liner_lang"
+        android:hint="تقييم"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTextNot" />
+</LinearLayout>
